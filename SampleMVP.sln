@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xyLOGIX.Queues.Messages.Eve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xyLOGIX.Queues.Messages.Interfaces", "..\..\repos\astrohart\xyLOGIX.Queues.Messages\xyLOGIX.Queues.Messages.Interfaces\xyLOGIX.Queues.Messages.Interfaces.csproj", "{9853CAC0-2EA1-440E-80B8-F4F42129868A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xyLOGIX.Queues.Messages.Models", "..\..\repos\astrohart\xyLOGIX.Queues.Messages\xyLOGIX.Queues.Messages.Models\xyLOGIX.Queues.Messages.Models.csproj", "{40919A13-6676-4C0C-834C-D21B8C29D256}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,16 @@ Global
 		{9853CAC0-2EA1-440E-80B8-F4F42129868A}.Release|x64.Build.0 = Release|x64
 		{9853CAC0-2EA1-440E-80B8-F4F42129868A}.Release|x86.ActiveCfg = Release|x86
 		{9853CAC0-2EA1-440E-80B8-F4F42129868A}.Release|x86.Build.0 = Release|x86
+		{40919A13-6676-4C0C-834C-D21B8C29D256}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{40919A13-6676-4C0C-834C-D21B8C29D256}.Debug|x64.ActiveCfg = Debug|x64
+		{40919A13-6676-4C0C-834C-D21B8C29D256}.Debug|x64.Build.0 = Debug|x64
+		{40919A13-6676-4C0C-834C-D21B8C29D256}.Debug|x86.ActiveCfg = Debug|x86
+		{40919A13-6676-4C0C-834C-D21B8C29D256}.Debug|x86.Build.0 = Debug|x86
+		{40919A13-6676-4C0C-834C-D21B8C29D256}.Release|Any CPU.ActiveCfg = Release|x86
+		{40919A13-6676-4C0C-834C-D21B8C29D256}.Release|x64.ActiveCfg = Release|x64
+		{40919A13-6676-4C0C-834C-D21B8C29D256}.Release|x64.Build.0 = Release|x64
+		{40919A13-6676-4C0C-834C-D21B8C29D256}.Release|x86.ActiveCfg = Release|x86
+		{40919A13-6676-4C0C-834C-D21B8C29D256}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
