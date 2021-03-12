@@ -57,10 +57,8 @@
     <Compile Include="CalcPresenter.cs" />
     <Compile Include="CalcService.cs" />
     <Compile Include="MakeNewCalcService.cs" />
-    <Compile Include="MessageQueueItemExtensions.cs" />
     <Compile Include="NewMessageMapping.cs" />
     <Compile Include="DelegateExtensions.cs" />
-    <Compile Include="EventBase.cs" />
     <Compile Include="CreateCalcPresenter.cs" />
     <Compile Include="ICalcView.cs" />
     <Compile Include="ICalcModel.cs" />
