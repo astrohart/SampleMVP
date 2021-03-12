@@ -60,6 +60,7 @@
     <Compile Include="ICalcModel.cs" />
     <Compile Include="ICalcPresenter.cs" />
     <Compile Include="ICalcService.cs" />
+    <Compile Include="MessageIds.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CalcView.resx">
