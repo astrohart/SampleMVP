@@ -5,16 +5,40 @@ VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleMVP", "SampleMVP\SampleMVP.csproj", "{C2412BF9-C5B2-4544-8F5B-0421AD3A45FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xyLOGIX.Queues.Messages.Events", "..\..\repos\astrohart\xyLOGIX.Queues.Messages\xyLOGIX.Queues.Messages.Events\xyLOGIX.Queues.Messages.Events.csproj", "{BB924F16-86CB-452D-9D11-5CF9954151A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C2412BF9-C5B2-4544-8F5B-0421AD3A45FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C2412BF9-C5B2-4544-8F5B-0421AD3A45FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2412BF9-C5B2-4544-8F5B-0421AD3A45FD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C2412BF9-C5B2-4544-8F5B-0421AD3A45FD}.Debug|x64.Build.0 = Debug|Any CPU
+		{C2412BF9-C5B2-4544-8F5B-0421AD3A45FD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C2412BF9-C5B2-4544-8F5B-0421AD3A45FD}.Debug|x86.Build.0 = Debug|Any CPU
 		{C2412BF9-C5B2-4544-8F5B-0421AD3A45FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2412BF9-C5B2-4544-8F5B-0421AD3A45FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2412BF9-C5B2-4544-8F5B-0421AD3A45FD}.Release|x64.ActiveCfg = Release|Any CPU
+		{C2412BF9-C5B2-4544-8F5B-0421AD3A45FD}.Release|x64.Build.0 = Release|Any CPU
+		{C2412BF9-C5B2-4544-8F5B-0421AD3A45FD}.Release|x86.ActiveCfg = Release|Any CPU
+		{C2412BF9-C5B2-4544-8F5B-0421AD3A45FD}.Release|x86.Build.0 = Release|Any CPU
+		{BB924F16-86CB-452D-9D11-5CF9954151A2}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{BB924F16-86CB-452D-9D11-5CF9954151A2}.Debug|x64.ActiveCfg = Debug|x64
+		{BB924F16-86CB-452D-9D11-5CF9954151A2}.Debug|x64.Build.0 = Debug|x64
+		{BB924F16-86CB-452D-9D11-5CF9954151A2}.Debug|x86.ActiveCfg = Debug|x86
+		{BB924F16-86CB-452D-9D11-5CF9954151A2}.Debug|x86.Build.0 = Debug|x86
+		{BB924F16-86CB-452D-9D11-5CF9954151A2}.Release|Any CPU.ActiveCfg = Release|x86
+		{BB924F16-86CB-452D-9D11-5CF9954151A2}.Release|x64.ActiveCfg = Release|x64
+		{BB924F16-86CB-452D-9D11-5CF9954151A2}.Release|x64.Build.0 = Release|x64
+		{BB924F16-86CB-452D-9D11-5CF9954151A2}.Release|x86.ActiveCfg = Release|x86
+		{BB924F16-86CB-452D-9D11-5CF9954151A2}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
