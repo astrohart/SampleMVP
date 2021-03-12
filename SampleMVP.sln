@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleMVP", "SampleMVP\Samp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xyLOGIX.Queues.Messages.Events", "..\..\repos\astrohart\xyLOGIX.Queues.Messages\xyLOGIX.Queues.Messages.Events\xyLOGIX.Queues.Messages.Events.csproj", "{BB924F16-86CB-452D-9D11-5CF9954151A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xyLOGIX.Queues.Messages.Interfaces", "..\..\repos\astrohart\xyLOGIX.Queues.Messages\xyLOGIX.Queues.Messages.Interfaces\xyLOGIX.Queues.Messages.Interfaces.csproj", "{9853CAC0-2EA1-440E-80B8-F4F42129868A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,16 @@ Global
 		{BB924F16-86CB-452D-9D11-5CF9954151A2}.Release|x64.Build.0 = Release|x64
 		{BB924F16-86CB-452D-9D11-5CF9954151A2}.Release|x86.ActiveCfg = Release|x86
 		{BB924F16-86CB-452D-9D11-5CF9954151A2}.Release|x86.Build.0 = Release|x86
+		{9853CAC0-2EA1-440E-80B8-F4F42129868A}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{9853CAC0-2EA1-440E-80B8-F4F42129868A}.Debug|x64.ActiveCfg = Debug|x64
+		{9853CAC0-2EA1-440E-80B8-F4F42129868A}.Debug|x64.Build.0 = Debug|x64
+		{9853CAC0-2EA1-440E-80B8-F4F42129868A}.Debug|x86.ActiveCfg = Debug|x86
+		{9853CAC0-2EA1-440E-80B8-F4F42129868A}.Debug|x86.Build.0 = Debug|x86
+		{9853CAC0-2EA1-440E-80B8-F4F42129868A}.Release|Any CPU.ActiveCfg = Release|x86
+		{9853CAC0-2EA1-440E-80B8-F4F42129868A}.Release|x64.ActiveCfg = Release|x64
+		{9853CAC0-2EA1-440E-80B8-F4F42129868A}.Release|x64.Build.0 = Release|x64
+		{9853CAC0-2EA1-440E-80B8-F4F42129868A}.Release|x86.ActiveCfg = Release|x86
+		{9853CAC0-2EA1-440E-80B8-F4F42129868A}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
