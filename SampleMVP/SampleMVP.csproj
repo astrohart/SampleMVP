@@ -66,8 +66,6 @@
     <Compile Include="ICalcModel.cs" />
     <Compile Include="ICalcPresenter.cs" />
     <Compile Include="ICalcService.cs" />
-    <Compile Include="IMessageQueue.cs" />
-    <Compile Include="IMessageQueueItem.cs" />
     <Compile Include="MakeNewCalcModel.cs" />
     <Compile Include="MakeNewMessageQueueItem.cs" />
     <Compile Include="Message.cs" />
