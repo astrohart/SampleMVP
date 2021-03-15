@@ -3,6 +3,9 @@ using System.Windows.Forms;
 
 namespace SampleMVP
 {
+    /// <summary>
+    /// Provides the main application code.
+    /// </summary>
     public static class Program
     {
         /// <summary>

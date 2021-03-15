@@ -1,30 +1,29 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Windows.Forms;
+using xyLOGIX.Queues.Messages;
 
 namespace SampleMVP
 {
     /// <summary>
-    /// Calculates the sums of values that the user types in.
+    /// The main window of the application.
     /// </summary>
+    /// <remarks>
+    /// Presents the user with options to type numbers into text boxes.
+    /// <para/>
+    /// Calculates the sums of values that the user types in.
+    /// </remarks>
     public partial class CalcView : Form, ICalcView
     {
         /// <summary>
         /// Constructs a new instance of <see cref="T:SampleMVP.CalcForm"/> and
         /// returns a reference to it.
         /// </summary>
-        /// S
         public CalcView()
         {
             InitializeComponent();
 
-            CreateCalcPresenter.ForForm(this)
-                            .WithModel(
-                                MakeNewCalcModel.FromScratch()
-                            )
-                            .AndService(
-                                MakeNewCalcService.FromScratch()
-                            );
+            InitializePresenter();
         }
 
         /// <summary>
@@ -123,6 +122,14 @@ namespace SampleMVP
         }
 
         /// <summary>
+        /// Creates a new instance of the Presenter of this form.
+        /// </summary>
+        private void InitializePresenter()
+            => CreateCalcPresenter.ForView(this)
+                                  .WithModel(MakeNewCalcModel.FromScratch())
+                                  .AndService(MakeNewCalcService.FromScratch());
+
+        /// <summary>
         /// Adds the numbers in the three text boxes together to the running total.
         /// </summary>
         /// <param name="sender">
@@ -134,7 +141,7 @@ namespace SampleMVP
         private void OnClickAddButton(object sender, EventArgs e)
             => SendMessage<EventArgs>.Having.Args(e)
                                      .ForMessageId(
-                                         MessageIds.ADD_BUTTON_CLICKED
+                                         CalcViewMessages.ADD_BUTTON_CLICKED
                                      );
 
         /// <summary>
@@ -149,7 +156,7 @@ namespace SampleMVP
         private void OnClickResetButton(object sender, EventArgs e)
             => SendMessage<EventArgs>.Having.Args(e)
                                      .ForMessageId(
-                                         MessageIds.RESET_BUTTON_CLICKED
+                                         CalcViewMessages.RESET_BUTTON_CLICKED
                                      );
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using xyLOGIX.Queues.Messages;
 
 namespace SampleMVP
 {
@@ -45,8 +46,7 @@ namespace SampleMVP
         public void CalculateTotal(ICalcModel model, IList<decimal> numbers)
         {
             if (model == null) throw new ArgumentNullException(nameof(model));
-            if (numbers.Count == 0)
-                return;
+            if (numbers.Count == 0) return;
 
             model.Total = numbers.Sum();
             model.RunningTotal += model.Total;
@@ -62,6 +62,9 @@ namespace SampleMVP
         /// event data.
         /// </param>
         protected virtual void OnTotalComputed(TotalComputedEventArgs e)
-            => BroadcastMessage<TotalComputedEventArgs>.Having.Args(this, e);
+        {
+            BroadcastMessage<TotalComputedEventArgs>.Having.Args(this, e);
+            TotalComputed?.Invoke(this, e);
+        }
     }
 }
