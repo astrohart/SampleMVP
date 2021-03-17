@@ -18,6 +18,11 @@
         ///     cref="T:SampleMVP.ICalcPresenter" />
         /// interface and returns a
         /// reference to it.
+        /// <para />
+        /// Also associates, with the newly-created Presenter object, a
+        /// reference to the <paramref name="view" /> specified.
+        /// <para />
+        /// The view must implement the <see cref="T:SampleMVP.ICalcView" /> interface.
         /// </summary>
         public static ICalcPresenter ForView(ICalcView view)
             => new CalcPresenter(view);
