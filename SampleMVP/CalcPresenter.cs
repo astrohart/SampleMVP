@@ -243,10 +243,10 @@ namespace SampleMVP
         {
             NewMessageMapping<EventArgs>
                 .Associate.WithMessageId(CalcViewMessages.ADD_BUTTON_CLICKED)
-                .AndHandler(new Action<EventArgs>(e => Add()));
+                .AndHandler(new Action(Add));
             NewMessageMapping<EventArgs>
                 .Associate.WithMessageId(CalcViewMessages.RESET_BUTTON_CLICKED)
-                .AndHandler(new Action<EventArgs>(e => Reset()));
+                .AndHandler(new Action(Reset));
         }
 
         /// <summary>

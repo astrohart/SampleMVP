@@ -139,7 +139,7 @@ namespace SampleMVP
         /// A <see cref="T:System.EventArgs"/> that contains the event data.
         /// </param>
         private void OnClickAddButton(object sender, EventArgs e)
-            => SendMessage<EventArgs>.Having.Args(e)
+            => SendMessage<EventArgs>.Having.NoArgs()
                                      .ForMessageId(
                                          CalcViewMessages.ADD_BUTTON_CLICKED
                                      );
@@ -154,7 +154,7 @@ namespace SampleMVP
         /// A <see cref="T:System.EventArgs"/> that contains the event data.
         /// </param>
         private void OnClickResetButton(object sender, EventArgs e)
-            => SendMessage<EventArgs>.Having.Args(e)
+            => SendMessage<EventArgs>.Having.NoArgs()
                                      .ForMessageId(
                                          CalcViewMessages.RESET_BUTTON_CLICKED
                                      );
