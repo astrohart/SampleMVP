@@ -138,6 +138,10 @@ namespace SampleMVP
         /// <param name="e">
         /// A <see cref="T:System.EventArgs"/> that contains the event data.
         /// </param>
+        /// <remarks>
+        /// This method responds by publishing a message to the message queue
+        /// with a unique identifier of <c>ADD_BUTTON_CLICKED</c>.
+        /// </remarks>
         private void OnClickAddButton(object sender, EventArgs e)
             => SendMessage<EventArgs>.Having.NoArgs()
                                      .ForMessageId(
@@ -153,6 +157,10 @@ namespace SampleMVP
         /// <param name="e">
         /// A <see cref="T:System.EventArgs"/> that contains the event data.
         /// </param>
+        /// <remarks>
+        /// This method responds by publishing a message to the message queue
+        /// with a unique identifier of <c>RESET_BUTTON_CLICKED</c>.
+        /// </remarks>
         private void OnClickResetButton(object sender, EventArgs e)
             => SendMessage<EventArgs>.Having.NoArgs()
                                      .ForMessageId(
